@@ -1,0 +1,534 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  scroll-behavior: smooth;
+}
+
+hr{
+  color: var(--gradient-bar);
+}
+
+.offcanvas-body{ color:white;}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: var(--color-bg); */
+}
+
+.bg-landing-page{
+    background: var(--color-bg);
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
+
+/*https://angrytools.com/gradient/*/
+.gradient__bg{
+  /* ff 3.6+ */
+background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+/* safari 5.1+,chrome 10+ */
+background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+/* opera 11.10+ */
+background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+/* ie 10+ */
+background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+/* global 92%+ browsers support */
+background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
+.gradient__header{
+
+         /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 0% 0%, rgba(1, 36, 74, 1) 0%, rgba(1, 33, 69, 1) 20%, rgba(2, 27, 56, 1) 50%, rgba(3, 16, 32, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 0% 0%, rgba(1, 36, 74, 1) 0%, rgba(1, 33, 69, 1) 20%, rgba(2, 27, 56, 1) 50%, rgba(3, 16, 32, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 0% 0%, rgba(1, 36, 74, 1) 0%, rgba(1, 33, 69, 1) 20%, rgba(2, 27, 56, 1) 50%, rgba(3, 16, 32, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 0% 0%, rgba(1, 36, 74, 1) 0%, rgba(1, 33, 69, 1) 20%, rgba(2, 27, 56, 1) 50%, rgba(3, 16, 32, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 0% 0%, rgba(1, 36, 74, 1) 0%, rgba(1, 33, 69, 1) 20%, rgba(2, 27, 56, 1) 50%, rgba(3, 16, 32, 1) 100%);
+
+}
+
+.gradient__text{
+background: var(--gradient-text);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/*Estilos de seccion ponyca*/
+
+.section__padding {
+padding: 4rem 6rem;
+}
+.section__margin {
+padding: 4rem 6rem;
+}
+
+/*Animaciones CSS https://animista.net/ */
+
+.scale-up-center {
+-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ------------------------------------------ */
+/* para display sidebar flex*/
+.hamburguesa{
+  color: #b397fd;
+}
+
+.home-page{
+  min-height: 100vh;
+}
+
+.flex-container{
+  display: flex;
+  min-height: 200px;
+}
+
+.home-content{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu-sidebar{
+  min-width: 200px;
+  max-width: 200px;
+  background-color: white;
+  text-align: left;
+}
+
+ul{
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #AE67FA;
+}
+.menu-link:hover{
+  text-decoration: none;
+  color: #FF4820;
+}
+
+.menu-link1 {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-link1:hover{
+  cursor: pointer;
+  color: #F49867;
+}
+
+.menu-link:hover{
+  cursor: pointer;
+  color: #F49867;
+}
+
+/* ------------------------------------------ */
+/* estilos glassmorphism*/
+.glassmorphism{
+  background: rgba(179, 151, 253, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(1.9px); */
+  -webkit-backdrop-filter: blur(1.9px);
+  /* border: 1px solid rgba(179, 151, 253, 0.17); */
+}
+
+.glassmorphism2{
+  background: rgba(179, 151, 253, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+  border: 1px solid rgba(179, 151, 253, 0.17);
+}
+
+/* ------------------------------------------ */
+/*estilos para popups*/
+.popup-box {
+  position: fixed;
+  top: 0;
+  left:0 ;
+  width:  100%;
+  height: 100vh;
+  color: black;
+}
+
+.box{
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 90vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-bg-box{
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: calc(100vh - 85vh - 20px);
+  padding: 20px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.box::-webkit-scrollbar {
+  display: none;
+}
+
+.perfil-usuario{
+  text-align: center;
+  border: none;
+}
+
+.box-filter{
+  /* backdrop-filter: opacity(20%); */
+  background: rgba(0,0,0,.5);
+}
+/* ------------------------------------------ */
+/*estilos para fotos con contenedor hexagonal*/
+.hex{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background: #70658c;
+  width: 150px;
+  height: 129.9px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hex-background{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 146px;
+  height: 125.9px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.foto-perfil:hover{
+  opacity: 0.3;
+}
+
+/* ------------------------------------------ */
+/*estilos para fotos con contenedor hexagonal*/
+.nav-link.active {
+    color: black !important;
+    background-color: #b397fd !important;
+}
+
+/* ------------------------------------------ */
+/*estilos de botones*/
+.log-in-btn, .log-out-btn {
+  border: 2px solid #b397fd;
+  color: #b397fd !important;
+  text-decoration: none !important;
+}
+.log-in-btn:hover, .log-out-btn:hover {
+  background-color: #b397fd !important;
+  cursor: pointer !important;
+}
+
+.log-in-btn:hover{
+  color: white !important;
+}
+
+.log-out-btn:hover {
+  border: 2px solid #b397fd;
+  color: black !important;
+}
+
+.user-btn{
+  color: #b397fd;
+}
+
+.user-btn:hover {
+  cursor: pointer;
+  color: #F49867;
+}
+
+.btn-aceptar{
+  border: 2px solid #b397fd;
+  background-color: #b397fd !important;
+  text-decoration: none !important;
+}
+.btn-aceptar:hover{
+  cursor: pointer !important;
+  background-color: #70658c !important;
+  color: white !important;
+}
+.btn-aceptar:focus {
+  border: 2px solid #b397fd !important;
+  background-color: #b397fd !important;
+}
+
+.btn-cancelar{
+  border: 2px solid #b397fd;
+  color: black !important;
+  text-decoration: none !important;
+  margin-right: 25px !important;
+}
+.btn-cancelar:hover{
+  border: 2px solid #70658c !important;
+}
+
+.upload-icon{
+  /* margin: 0 10px 0 5px; */
+  font-size: 21px !important;
+}
+
+.btn-tooltip{
+  background-color: white !important;
+  border: none !important;
+  width: 5% !important;
+}
+.btn-tooltip:hover{
+  background-color: white !important;
+  border: none !important;
+  width: 5% !important;
+}
+
+.btn-volver:hover{
+  font-weight: bold;
+}
+/* ------------------------------------------ */
+/* estilos home principal*/
+.home-title-section{
+  position: relative;
+  height: 100vh;
+}
+
+.home-title{
+  position: absolute;
+  top: 8%;
+  left: 19.7%;
+  padding: 25px 200px;
+}
+
+.home-title-btn{
+  width: 40%;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.home-carousel{
+  padding: 7% 15%;
+}
+
+.carousel-container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-img{
+  height: 300px;
+  width: 300px;
+  object-fit: scale-down;
+}
+
+.home-card{
+  max-width: 23%;
+  margin: 0 15px;
+  margin-top: 20px;
+}
+
+/*estilos particles*/
+#tsparticles{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------ */
+/*estilos para footer*/
+.footer{
+  background-color: #d6d5d2;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.card-title{
+  padding-top: 7px;
+}
+
+.footer-icon{
+  font-size: 25px;
+}
+
+.footer-row{
+  padding-top: 2px;
+}
+
+.btn-tooltip-footer{
+  /* background-color: #d6d5d2 !important; */
+  border: none !important;
+  width: 50% !important;
+}
+.btn-tooltip-footer:hover{
+  /* background-color: #d6d5d2 !important; */
+  border: none !important;
+  width: 50% !important;
+}
+.btn-tooltip-footer:focus {
+  border: none !important;
+  /* background-color: #d6d5d2 !important; */
+}
+
+/* ------------------------------------------ */
+/*estilos varios*/
+.bg-home-section{
+  background-color: #EFF1EF;
+  /* width:  100%;
+  height: 100vh; */
+}
+
+.bg-perfil{
+    background-color: #042c54;
+}
+
+.accordion-item{
+  border-color: black;
+}
+.accordion-button, .bg-faq{
+  background: #EFF1EF;
+}
+.accordion-button:not(.collapse){
+  background: #EFF1EF;
+}
+
+.title-modal{
+  color: black;
+}
+
+.title-modal2{
+  color: white;
+}
+
+.popup-doc{
+  width: 58.3%;
+  margin-top: 177px;
+}
+
+.black-text{
+  color: black;
+}
+
+.rounded-none{
+  border-radius: 0;
+}
+/* ------------------------------------------ */
+/*estilos tables*/
+table {
+  border-collapse: collapse;
+  border: 2px solid;
+}
+
+.custom-table {
+  min-width: 900px;
+}
+
+.custom-table thead tr, .custom-table thead th {
+  font-size: large;
+  text-align: center;
+  border-right: 1px solid;
+  border-right-color: inherit;
+}
+
+.custom-table tbody tr, .custom-table tbody td {
+  color: black;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 20px !important;
+  min-width: 10px !important;
+  border-right: 1px solid;
+  border-right-color: inherit;
+}
+
+/* ------------------------------------------ */
+/* estilos notification-center*/
+.ravenhub-notification-wrapper{
+  margin-top: 7.5px;
+  margin-right: 7px;
+}
+
+.notification-title{
+  visibility: hidden;
+}
+.notification-title:before{
+  color: #F49867;
+  font-weight: bold;
+  font-size: 19.7px;
+  letter-spacing: 0.4px;
+  margin-left: 110px;
+  content: "Notificaciones";
+  visibility: visible;
+}
+
+.open-feed.inactiveBell svg[data-v-5b8e1db6]{
+  fill: #b397fd !important;
+}
+
+.open-feed.activeBell svg[data-v-5b8e1db6]{
+  fill: #F49867 !important;
+}
+
+.settings-link{
+  visibility: hidden;
+}
+
+.notification-center-footer{
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.customClass{
+  position: sticky;
+  z-index: 900;
+}
